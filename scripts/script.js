@@ -65,8 +65,8 @@ $(document).ready(function() {
     }
   });
 
-  // Scroll to Values from app nav
-  $('.app-nav .item.values').click(function() {
+  // Scroll to Values / Skills from app nav
+  $('.app-nav .item.values, .app-nav .item.skills').click(function() {
     if ( $('body').hasClass('mobile-nav--is--visible') ){
       function scrollDelay() {
         window.setTimeout(scrollToValues, 300);
@@ -78,8 +78,8 @@ $(document).ready(function() {
     }
   });
 
-  // Scroll to Background from app nav
-  $('.app-nav .item.background').click(function() {
+  // Scroll to Background / History from app nav
+  $('.app-nav .item.background, .app-nav .item.history').click(function() {
     if ( $('body').hasClass('mobile-nav--is--visible') ){
       function scrollDelay() {
         window.setTimeout(scrollToBackground, 300);
@@ -104,8 +104,8 @@ $(document).ready(function() {
     }
   });
 
-  // Scroll to Work from app nav
-  $('.app-nav .item.work').click(function() {
+  // Scroll to Work / Works from app nav
+  $('.app-nav .item.work, .app-nav .item.works').click(function() {
     if ( $('body').hasClass('mobile-nav--is--visible') ){
       function scrollDelay() {
         window.setTimeout(scrollToWork, 300);
@@ -220,32 +220,11 @@ $(document).ready(function() {
     }
   });
   $('.section.intro .option').click(function() {
+    var index = $(this).index();
     $('.section.intro .option').removeClass('is--active');
     $('.section.intro .text').removeClass('is--visible');
-  });
-  $('.section.intro .option.anyone').click(function() {
-    $('.section.intro .option.anyone').addClass('is--active');
-    $('.section.intro .text.anyone').addClass('is--visible');
-  });
-  $('.section.intro .option.recruiters').click(function() {
-    $('.section.intro .option.recruiters').addClass('is--active');
-    $('.section.intro .text.recruiters').addClass('is--visible');
-  });
-  $('.section.intro .option.design-directors').click(function() {
-    $('.section.intro .option.design-directors').addClass('is--active');
-    $('.section.intro .text.design-directors').addClass('is--visible');
-  });
-  $('.section.intro .option.product-designers').click(function() {
-    $('.section.intro .option.product-designers').addClass('is--active');
-    $('.section.intro .text.product-designers').addClass('is--visible');
-  });
-  $('.section.intro .option.product-managers').click(function() {
-    $('.section.intro .option.product-managers').addClass('is--active');
-    $('.section.intro .text.product-managers').addClass('is--visible');
-  });
-  $('.section.intro .option.engineers').click(function() {
-    $('.section.intro .option.engineers').addClass('is--active');
-    $('.section.intro .text.engineers').addClass('is--visible');
+    $(this).addClass('is--active');
+    $('.section.intro .text').eq(index).addClass('is--visible');
   });
 
   // Scroll to Contact from text links in sections
@@ -495,9 +474,9 @@ $(window).on('load resize scroll', function() {
 
   var appNavItem = $('.app-nav .item');
   var appNavItemIntro = $('.app-nav .item.intro');
-  var appNavItemWork = $('.app-nav .item.work');
-  var appNavItemValues = $('.app-nav .item.values');
-  var appNavItemBackground = $('.app-nav .item.background');
+  var appNavItemWork = $('.app-nav .item.work, .app-nav .item.works');
+  var appNavItemValues = $('.app-nav .item.values, .app-nav .item.skills');
+  var appNavItemBackground = $('.app-nav .item.background, .app-nav .item.history');
   var appNavItemReferences = $('.app-nav .item.references');
   var appNavItemAbout = $('.app-nav .item.about');
   var appNavItemContact = $('.app-nav .item.contact');
