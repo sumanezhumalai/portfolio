@@ -1,0 +1,570 @@
+INFORMATION — SUMAN EZHUMALAI
+
+Purpose
+
+This file consolidates information extracted from the provided resume
+PDF, bio-data Markdown file, skills Markdown file, and resume HTML
+source. It is intended to be used as a knowledge source for an AI
+system.
+
+Source Files
+
+1.  Suman_Ezhumalai_Resume.pdf — resume content.
+2.  Bio data(1).md — personal, education, skills, project, internship,
+    certification, achievement, strength, and interest details.
+3.  Skills.md — categorized technical skills.
+4.  resume.html — structured web resume containing metadata, contact
+    information, summary, skills, projects, education, certifications,
+    and page assets.
+
+------------------------------------------------------------------------
+
+1. IDENTITY
+
+Full name: Suman Ezhumalai
+
+Resume title: Backend Developer — Java & Spring Boot
+
+Professional summary: Computer Science graduate with hands-on experience
+developing Java Spring Boot backend applications through academic and
+personal projects. Skilled in REST APIs, relational databases, and
+Docker-based deployments. Interested in backend engineering,
+microservices, and enterprise application development using Java
+technologies.
+
+Career objective: Motivated Computer Science and Business Systems
+student with strong interest in software development, cybersecurity,
+backend engineering, and modern web technologies. Seeking an opportunity
+to apply technical and problem-solving skills in a professional
+environment while continuously learning and contributing to innovative
+projects.
+
+------------------------------------------------------------------------
+
+2. CONTACT INFORMATION
+
+Email: sumanezhumalai@gmail.com Phone: +91 9159468800
+
+GitHub: https://linkedin.com/in/sumanezhumalai
+
+LinkedIn: https://linkedin.com/in/sumanezhumalai
+
+------------------------------------------------------------------------
+
+3. PERSONAL DETAILS
+
+Date of birth: 28/10/2004 Gender: Male Nationality: Indian
+
+Languages known: - Tamil - English
+
+Current address: No 47, Abimayu Nagar, Second Cross Street, Periya
+Kalapet, Puducherry
+
+Permanent address: No 47, Abimayu Nagar, Second Cross Street, Periya
+Kalapet, Puducherry - 605014
+
+Normalized address appearing in the bio-data’s dedicated Address
+section: No 47, Abimayu Nagar, Second Cross Street, Periya Kalapet,
+Puducherry - 605014
+
+------------------------------------------------------------------------
+
+4. EDUCATION
+
+Undergraduate
+
+Degree: B.Tech — Computer Science and Business Systems
+
+Institution: Sri Manakula Vinayagar Engineering College, Puducherry
+
+University: Pondicherry University
+
+Duration: Oct 2022 – Apr 2026
+
+Year of passing: 2026
+
+CGPA: 9.0 / 10
+
+The resume PDF and HTML identify the qualification as: B.Tech — Computer
+Science and Business Systems CGPA: 9.0
+
+Higher Secondary Education
+
+Qualification: Class 12 / HSC
+
+School: Amalorpavam Higher Secondary School, Puducherry
+
+Board: Tamil Nadu State Board
+
+Duration: Jun 2020 – May 2022
+
+Year of passing: 2022
+
+Marks: 528 / 600
+
+Percentage: 88%
+
+Secondary Education
+
+Qualification: Class 10 / SSLC
+
+School: Amalorpavam Higher Secondary School, Puducherry
+
+Board: Tamil Nadu State Board
+
+Duration: Jun 2019 – Mar 2020
+
+Year of passing: 2020
+
+Marks: 439 / 500
+
+Percentage: 87.8%
+
+------------------------------------------------------------------------
+
+5. TECHNICAL SKILLS
+
+Programming / Java Core
+
+-   Java
+-   Object-Oriented Programming (OOP)
+-   Collections Framework
+-   Streams API
+-   Lambda Expressions
+-   Multithreading
+-   JDBC
+-   JUnit
+
+Spring Ecosystem / Backend
+
+-   Spring Boot
+-   Spring Data JPA
+-   Hibernate
+-   Spring Security
+-   REST APIs
+-   JWT Authentication
+-   JPA
+
+Databases
+
+-   SQL
+-   PostgreSQL
+-   MySQL
+-   Firebase
+-   Supabase
+-   InstantDB
+
+Note: SQL is listed as both a programming/database skill in the bio-data
+and as a database skill elsewhere.
+
+Frontend / Web
+
+-   React.js / React JS
+-   HTML
+-   CSS
+-   Bootstrap
+-   ASP.NET
+
+.NET
+
+-   C#
+-   ASP.NET Core
+-   Entity Framework Core
+
+DevOps / Development Tools
+
+-   Docker
+-   Maven
+-   Git
+-   GitHub
+-   Linux
+-   Postman
+-   Swagger
+-   Eclipse
+-   VS Code
+-   Neovim
+-   Ollama
+
+Operating Systems
+
+-   Linux
+-   Windows
+-   Arch Linux
+
+------------------------------------------------------------------------
+
+6. PROJECTS
+
+Q-Mail — Quantum-Secure Post-Quantum Email Platform
+
+Project name variants found in the sources: - Q-Mail — Quantum-Secure
+Post-Quantum Email Platform - Q-Mail — Quantum Secure Email Application
+
+Technologies
+
+Resume PDF / HTML: - Java - Spring Boot - Next.js - PostgreSQL - Rust -
+Ring-LWE - Docker - InstantDB
+
+Bio-data: - React JS - InstantDB - WebSockets - Ring-LWE Cryptography -
+AES-256-GCM
+
+Resume project description
+
+Developed a secure email platform using Java Spring Boot and Next.js
+with REST APIs for: - authentication - mailbox management - email CRUD
+operations
+
+Integrated a Rust-based Ring-LWE microservice for: - post-quantum
+encryption - decryption - key generation
+
+The resume states that this achieved 128-bit quantum security.
+
+Designed a three-layer security architecture consisting of: 1. Ring-LWE
+public-key encryption 2. Identity-based access control 3. AES-256-GCM
+private key management
+
+Containerized services using Docker and implemented real-time
+cross-device synchronization using InstantDB.
+
+Bio-data project description
+
+Developed a stateless, real-time post-quantum secure email application
+with WebSocket-based cross-device synchronization.
+
+Implemented Ring-LWE lattice encryption with NTT acceleration for
+128-bit quantum security.
+
+Designed a three-layer security architecture including: 1. message
+encryption 2. identity-based access control 3. zero-knowledge private
+key management
+
+Source reconciliation note
+
+The PDF/HTML describes the frontend as Next.js and the project
+technology list includes Java, Spring Boot, PostgreSQL, Rust, Ring-LWE,
+Docker, and InstantDB.
+
+The bio-data lists React JS, InstantDB, WebSockets, Ring-LWE
+Cryptography, and AES-256-GCM, and additionally describes NTT
+acceleration, stateless operation, and zero-knowledge private key
+management.
+
+These details should not be silently treated as contradictory
+implementations; they may represent different versions or descriptions
+of the same project. When precision matters, attribute the detail to the
+relevant source.
+
+------------------------------------------------------------------------
+
+RideSphere — Car Rental Management System
+
+Technologies
+
+-   Java
+-   Spring Boot
+-   Spring Data JPA
+-   PostgreSQL
+-   React.js
+-   Bootstrap
+-   JWT
+-   Hibernate
+
+Description
+
+Built a full-stack car rental platform with three roles: - Admin -
+Agent - Customer
+
+Used Java Spring Boot REST APIs.
+
+Implemented JWT-based stateless authentication and role-based
+authorization for secure multi-role access control.
+
+Integrated PostgreSQL using Spring Data JPA and Hibernate for persistent
+relational data management.
+
+Developed a responsive UI using React.js and Bootstrap for: - booking
+workflows - vehicle workflows - user workflows
+
+------------------------------------------------------------------------
+
+7. INTERNSHIP / TRAINING
+
+Company: Integra Software Services Pvt. Ltd.
+
+Role: Network and Support Intern
+
+Duration: Jan 2025 – Feb 2025
+
+Description: Worked on: - networking support - system troubleshooting -
+automation tasks - web development-related activities
+
+Gained practical exposure to: - enterprise workflows - technical support
+processes - collaborative development environments
+
+------------------------------------------------------------------------
+
+8. CERTIFICATIONS
+
+Programming in Java — NPTEL
+
+Detail: Intermediate and Core Concepts in Java Programming
+
+Public Speaking — NPTEL
+
+Detail: Leadership and Social Skills Training
+
+NCC ‘A’ Certificate — NCC Air Wing
+
+Detail: Certificate of Discipline
+
+------------------------------------------------------------------------
+
+9. ACHIEVEMENTS
+
+-   Developed a post-quantum secure email application using Ring-LWE
+    cryptography.
+-   Maintained a strong academic performance with a 9.0 CGPA.
+-   NCC ‘A’ Certified under NCC Air Wing.
+
+------------------------------------------------------------------------
+
+10. STRENGTHS
+
+-   Problem-solving skills
+-   Quick learner
+-   Adaptability
+-   Communication skills
+-   Team collaboration
+-   Analytical thinking
+
+------------------------------------------------------------------------
+
+11. HOBBIES / INTERESTS
+
+-   Chess
+-   Reading
+-   Linux customization and ricing
+-   Exploring new Linux utilities
+-   Open-source technologies
+
+------------------------------------------------------------------------
+
+12. RESUME WEBSITE / HTML INFORMATION
+
+HTML document language: English
+
+HTML metadata: - Character set: UTF-8 - Viewport configured for
+responsive display - Description: Resume of Suman Ezhumalai — Computer
+Science graduate, Java Spring Boot backend developer. - Author: Suman
+Ezhumalai - Page title: Resume | Suman Ezhumalai
+
+Resume page assets referenced: - assets/favicon.ico -
+assets/avatar.webp - styles.css - script.js - Google Fonts / Montserrat
+
+The HTML contains a portrait/avatar image described with alt text:
+“Portrait of Suman Ezhumalai”
+
+Avatar dimensions specified: 120 × 120
+
+The HTML resume provides a “Download PDF” action pointing to:
+assets/Suman_Ezhumalai_Resume.pdf
+
+Displayed professional title: Backend Developer — Java & Spring Boot
+
+Displayed contact links: - sumanezhumalai@gmail.com - +91 9159468800 -
+github.com/thywisdom - linkedin.com/in/sumanezhumalai
+
+HTML resume sections: 1. Summary 2. Skills 3. Projects 4. Education 5.
+Certifications
+
+------------------------------------------------------------------------
+
+13. PROFESSIONAL PROFILE
+
+Primary professional direction: - Backend development - Java
+development - Spring Boot - REST API development - Relational database
+development - Docker-based deployment - Microservices - Enterprise
+application development
+
+Additional stated interests: - Software development - Cybersecurity -
+Modern web technologies
+
+The resume positions Suman primarily as a Java/Spring Boot backend
+developer while also documenting frontend, .NET, DevOps, Linux, and
+security-related skills.
+
+------------------------------------------------------------------------
+
+14. TECHNOLOGY ASSOCIATIONS BY PROJECT
+
+Q-Mail: - Java - Spring Boot - Next.js - React JS - PostgreSQL - Rust -
+Ring-LWE cryptography - AES-256-GCM - InstantDB - WebSockets - Docker -
+REST APIs - NTT acceleration - post-quantum encryption - identity-based
+access control - private key management - zero-knowledge private key
+management
+
+RideSphere: - Java - Spring Boot - Spring Data JPA - Hibernate -
+PostgreSQL - React.js - Bootstrap - JWT - REST APIs - stateless
+authentication - role-based authorization
+
+------------------------------------------------------------------------
+
+15. SKILL INVENTORY — CONSOLIDATED
+
+Programming: Java, C#, SQL
+
+Java fundamentals: OOP, Collections Framework, Streams API, Lambda
+Expressions, Multithreading, JDBC, JUnit
+
+Backend: Spring Boot, Spring Data JPA, Spring Security, Hibernate, JPA,
+REST APIs, JWT Authentication
+
+Databases: SQL, MySQL, PostgreSQL, Firebase, Supabase, InstantDB
+
+Frontend: React.js, React JS, HTML, CSS, Bootstrap
+
+.NET: C#, ASP.NET, ASP.NET Core, Entity Framework Core
+
+DevOps: Docker, Maven
+
+Version control / collaboration: Git, GitHub
+
+API / development utilities: Postman, Swagger
+
+Editors / IDEs: Eclipse, VS Code, Neovim
+
+AI / local tooling: Ollama
+
+Operating systems: Linux, Windows, Arch Linux
+
+------------------------------------------------------------------------
+
+16. FACTS THAT REQUIRE SOURCE-AWARE HANDLING
+
+The provided documents contain some differences in how information is
+presented. An AI using this file should preserve these distinctions
+rather than inventing a resolution.
+
+GitHub
+
+Resume PDF: https://github.com/thywisdom
+
+Resume HTML: github.com/thywisdom
+
+Bio-data dedicated GitHub section: github.com/thywisdom
+
+Bio-data personal-details table: github.com/sumanezhumalai
+
+Preferred displayed/public resume GitHub: https://github.com/thywisdom
+
+Q-Mail frontend terminology
+
+Resume PDF/HTML: Next.js
+
+Bio-data: React JS
+
+Do not automatically replace one with the other.
+
+Q-Mail architecture details
+
+Resume: - Java Spring Boot - Next.js - REST APIs - Rust Ring-LWE
+microservice - Docker - InstantDB - three-layer security architecture -
+AES-256-GCM
+
+Bio-data adds: - stateless architecture - WebSockets - NTT
+acceleration - zero-knowledge private key management - React JS
+
+When asked about the project, these can be presented as
+source-documented details, with the originating source distinguished if
+necessary.
+
+Degree / university formatting
+
+Degree: B.Tech — Computer Science and Business Systems
+
+Institution: Sri Manakula Vinayagar Engineering College
+
+University: Pondicherry University
+
+The bio-data’s “Education Quick Copy” contains a malformed university
+field ending with: “and Business Systems” This appears to be
+formatting/content noise in that section. The structured education table
+identifies the university as Pondicherry University.
+
+Education status wording
+
+The resume describes Suman as a “Computer Science graduate” and the HTML
+uses the same wording. The bio-data specifies B.Tech duration as Oct
+2022 – Apr 2026 and year of passing as 2026.
+
+------------------------------------------------------------------------
+
+17. AI RESPONSE GUIDANCE
+
+When using this file as a knowledge source:
+
+-   Identify Suman Ezhumalai as the person described by this
+    information.
+-   Use the professional identity “Backend Developer — Java & Spring
+    Boot” when a concise professional title is needed.
+-   For resume/profile questions, prioritize the resume PDF and HTML for
+    the public-facing professional profile.
+-   Use the bio-data for detailed personal information, internship,
+    achievements, strengths, hobbies, and detailed education records.
+-   Use the skills document for the explicit categorized technical skill
+    inventory.
+-   Do not invent employers, job titles, projects, technologies, dates,
+    qualifications, grades, certifications, or achievements that are not
+    documented here.
+-   Do not infer proficiency levels such as
+    beginner/intermediate/advanced unless explicitly stated.
+-   Do not infer employment status beyond the documented internship and
+    project experience.
+-   Do not claim production experience unless explicitly documented.
+-   Do not claim professional work experience in Java/Spring Boot beyond
+    what the documents describe as academic/personal project experience.
+-   When a source conflict exists, preserve the documented alternatives
+    and state the source rather than silently choosing a value.
+-   Treat the GitHub URL https://github.com/thywisdom as the public
+    resume GitHub because it is consistently used in the resume PDF,
+    HTML, and the bio-data’s dedicated GitHub section.
+-   Keep personal contact/address information available as factual
+    profile data, but only expose it when relevant to the user’s
+    request.
+
+------------------------------------------------------------------------
+
+18. QUICK PROFILE
+
+Name: Suman Ezhumalai
+
+Professional title: Backend Developer — Java & Spring Boot
+
+Education: B.Tech — Computer Science and Business Systems, Sri Manakula
+Vinayagar Engineering College, Pondicherry University, CGPA 9.0/10,
+2026.
+
+Core technical focus: Java, Spring Boot, Spring Data JPA, Spring
+Security, Hibernate, REST APIs, JWT, SQL, PostgreSQL, MySQL, Docker,
+Git, GitHub, Linux.
+
+Frontend: React.js, HTML, CSS, Bootstrap.
+
+Additional: C#, ASP.NET Core, Entity Framework Core.
+
+Major projects: 1. Q-Mail — Quantum-Secure Post-Quantum Email Platform
+2. RideSphere — Car Rental Management System
+
+Internship: Network and Support Intern at Integra Software Services Pvt.
+Ltd., Jan 2025 – Feb 2025.
+
+Certifications: Programming in Java — NPTEL; Public Speaking — NPTEL;
+NCC ‘A’ Certificate — NCC Air Wing.
+
+Languages: Tamil, English.
+
+Interests: Chess, reading, Linux customization/ricing, exploring Linux
+utilities, open-source technologies.
+
+Public profiles: GitHub: https://github.com/thywisdom LinkedIn:
+https://linkedin.com/in/sumanezhumalai

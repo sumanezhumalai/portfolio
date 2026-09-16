@@ -53,9 +53,11 @@
   body.is--loading .section.cover {
     display: grid;
   }
+  /* TODO: Change appropriately — re-enable when .section.work has inner content.
+     Hides the hero-image during the cover intro animation to prevent flash.
   body.is--loading .section.work .hero-image figure {
     visibility: hidden;
-  }
+  } */
   body.cover--is--visible .app-main {
     transform: translateY(115vh);
   }
@@ -605,191 +607,29 @@
   }
   
   
-  /* Section work
+  /* Section work — REMOVED (template cleanup).
+     Add new .section.work styles here when content is ready.
   ----------------------------------------------------------------------------- */
   
-  .section.work {
-    padding: 0;
-    display: flex;
-  }
-  .section.work > .content {
-    padding: 50vh 0 20px 0;
-  }
-  .section.work .hero-image figure {
-    position: relative;
   
-    -webkit-mask-image: url("/assets/app/black.svg");
-    -webkit-mask-size: contain;
-    -webkit-mask-position: center;
-    -webkit-mask-repeat: no-repeat;
-  
-    mask-image: url("/assets/app/black.svg");
-    mask-size: contain;
-    mask-position: center;
-    mask-repeat: no-repeat;
-  }
-  .section.work .hero-image .image {
-    width: 100vw;
-    padding-bottom: 205.556%;
-  
-    background-image: url("/assets/app/layer.webp");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  @media all and (min-width: 1000px) {
-    .section.work .hero-image .image {
-      background-image: url("/assets/app/layer.webp");
-    }
-  }
-  @media all and (min-width: 2000px) {
-    .section.work .hero-image .image {
-      background-image: url("/assets/app/layer.webp");
-    }
-  }
-  .section.work .hero-image .image-overlay-01,
-  .section.work .hero-image .image-overlay-02 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  
-  /* Section values
+  /* Section values — REMOVED (template cleanup).
+     Add new .section.values styles here when content is ready.
   ----------------------------------------------------------------------------- */
   
-  .section.values > .content {
-    padding: 220px 0 20px 0;
-    display: grid;
-    grid-template-columns: var(--grid--app-columns-2);
-    gap: var(--grid--app-gutter);
-  }
-  .section.values .title {
-    padding-bottom: 80px;
-    grid-column: 1 / -1;
-  }
-  .section.values .description {
-    grid-column: 2 / -1;
-  }
   
-  
-  /* Section background
+  /* Section background — REMOVED (template cleanup).
+     Add new .section.background styles here when content is ready.
   ----------------------------------------------------------------------------- */
   
-  .section.background > .content {
-    padding: 220px 0 20px 0;
-    display: grid;
-    grid-template-columns: var(--grid--app-columns-2);
-    gap: var(--grid--app-gutter);
-  }
-  .section.background .item {
-    padding-top: 80px;
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: var(--grid--app-columns-2);
-    column-gap: var(--grid--app-gutter);
-  }
-  .section.background .item .logo {
-    grid-column: 1 / -1;
-    width: 96px;
-    height: 96px;
-    border-radius: 48px;
-    margin-left: -8px;
-    margin-bottom: 32px;
-    display: flex;
-    justify-content: center;
-    background-color: var(--color--foreground--5);
-  }
-  .section.background .item .logo .content {
-    display: flex;
-    align-items: center;
-  }
-  .section.background .item .logo .content svg path {
-    fill: var(--color--foreground--100);
-  }
-  .section.background .item .company {
-    grid-column: 1 / -1;
-  }
-  .section.background .item .role {
-    grid-column: 1 / -1;
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
-  }
-  .section.background .item .metadata {
-    grid-column: 1 / -1;
-    padding-top: 10px;
-  }
-  .section.background .item .time {
-    padding-right: 0.3em;
-  }
-  .section.background .item .location {
-  }
-  .section.background .item .description {
-    padding-top: 10px;
-    grid-column: 1 / 2;
-    color: var(--color--foreground--50);
-  }
   
-  
-  /* Section references
+  /* Section references — REMOVED (template cleanup).
+     Add new .section.references styles here when content is ready.
   ----------------------------------------------------------------------------- */
   
-  .section.references > .content {
-    padding: 220px 0 20px 0;
-    display: grid;
-    grid-template-columns: var(--grid--app-columns-2);
-    gap: var(--grid--app-gutter);
-  }
-  .section.references .item:nth-child(n+3) {
-    padding-top: 40px;
-  }
-  .section.references .quote {
-    padding-right: 20px;
-  }
-  .section.references .item p {
-    padding-top: 10px;
-  }
-  .section.references .person {
-    padding-right: 0.3em;
-  }
-  .section.references .role {
-    color: var(--color--foreground--50);
-  }
-  .section.references .promo {
-    padding-top: 160px;
-    grid-column: 1 / -1;
-  }
   
-  
-  /* Section about
+  /* Section about — REMOVED (template cleanup).
+     Add new .section.about styles here when content is ready.
   ----------------------------------------------------------------------------- */
-  
-  .section.about > .content {
-    padding: 220px 0 20px 0;
-    display: grid;
-    grid-template-columns: var(--grid--app-columns-2);
-    gap: var(--grid--app-gutter);
-  }
-  .section.about .biography,
-  .section.about .colophon {
-    grid-column: 2 / -1;
-  }
-  .section.about h2 {
-    padding-top: 40px;
-    padding-bottom: 0.14em;
-  }
-  .section.about p {
-    padding-top: 20px;
-  }
-  .section.about .biography p {
-    padding-top: 0;
-  }
-  .section.about p span.description,
-  .section.about p span.copyright {
-    font-size: 13px;
-  }
   
   
   /* Section contact

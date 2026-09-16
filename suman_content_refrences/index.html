@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Suman Ezhumalai — Computer Science graduate and backend developer specializing in Java Spring Boot, REST APIs, and Docker-based deployments." />
+    <meta name="author" content="Suman Ezhumalai" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Suman Ezhumalai | Backend Developer" />
+    <meta property="og:description" content="Java Spring Boot backend developer skilled in REST APIs, relational databases, and Docker-based deployments." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/hero.webp" />
+
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="styles.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+
+    <title>Suman Ezhumalai | Backend Developer</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ============ NAVIGATION ============ -->
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a class="nav-logo" href="#home" aria-label="Suman Ezhumalai home">
+          Suman<span>.</span>
+        </a>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+          <span></span>
+        </label>
+
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="resume.html" class="nav-cta">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- ============ HERO SECTION ============ -->
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <h1 class="hero-heading"><em>h</em>i! I'm <span>Suman</span></h1>
+          <p class="hero-subtitle">Backend Developer &mdash; Java &amp; Spring Boot</p>
+          <p class="hero-para">
+            A
+            <a href="https://en.wikipedia.org/wiki/Computer_science" target="_blank" rel="noopener">
+              Computer Science
+            </a>
+            graduate with hands-on experience developing Java Spring Boot
+            <a href="https://en.wikipedia.org/wiki/Front_end_and_back_end" target="_blank" rel="noopener">
+              backend
+            </a>
+            applications through academic and personal projects. Skilled in
+            <a href="https://en.wikipedia.org/wiki/REST" target="_blank" rel="noopener">RESTful APIs</a>,
+            relational databases, and
+            <a href="https://en.wikipedia.org/wiki/Docker_(software)" target="_blank" rel="noopener">docker-based</a>
+            deployments. Interested in backend engineering, microservices, and enterprise application
+            development using Java technologies.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#works">View my work</a>
+            <a class="btn btn-secondary" href="resume.html">View resume</a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <picture class="hero-img">
+            <source srcset="assets/hero.webp" type="image/webp" />
+            <img src="assets/hero.webp" alt="Suman Ezhumalai" width="480" height="480" loading="eager" />
+          </picture>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- ============ ABOUT SECTION ============ -->
+      <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-content">
+          <picture class="about-avatar">
+            <source srcset="assets/avatar.webp" type="image/webp" />
+            <img src="assets/avatar.webp" alt="Portrait of Suman Ezhumalai" width="240" height="240" loading="lazy" />
+          </picture>
+
+          <div class="about-text">
+            <p>
+              I'm a Computer Science and Business Systems undergraduate at Sri Manakula Vinayagar
+              Engineering College (Pondicherry University), graduating in 2026 with a CGPA of 9.0/10.
+              I build backend systems with Java Spring Boot, design RESTful APIs, and deploy them
+              with Docker.
+            </p>
+            <p>
+              My focus areas include backend engineering, microservices architecture, and enterprise
+              application development. I'm also interested in cybersecurity and post-quantum
+              cryptography, which I explored in depth while building Q-Mail, a quantum-secure email
+              platform.
+            </p>
+
+            <dl class="about-facts">
+              <div class="about-fact">
+                <dt>Location</dt>
+                <dd>Puducherry, India</dd>
+              </div>
+              <div class="about-fact">
+                <dt>Education</dt>
+                <dd>B.Tech CSBS, Class of 2026</dd>
+              </div>
+              <div class="about-fact">
+                <dt>Focus</dt>
+                <dd>Java &middot; Spring Boot &middot; REST APIs</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- ============ SKILLS SECTION ============ -->
+      <section class="skills" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-grid">
+          <div class="skills-group">
+            <h3>Core &amp; Backend</h3>
+            <ul class="skills-list">
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>Spring Data JPA</li>
+              <li>Spring Security</li>
+              <li>Hibernate</li>
+              <li>REST APIs</li>
+              <li>JWT Authentication</li>
+              <li>JDBC</li>
+              <li>Multithreading</li>
+              <li>Collections Framework</li>
+              <li>Streams API</li>
+              <li>Lambda Expressions</li>
+              <li>OOP</li>
+              <li>JUnit</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>Databases</h3>
+            <ul class="skills-list">
+              <li>SQL</li>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>Firebase</li>
+              <li>Supabase</li>
+              <li>InstantDB</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>Web &amp; Frontend</h3>
+            <ul class="skills-list">
+              <li>React.js</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>Additional &amp; .NET</h3>
+            <ul class="skills-list">
+              <li>C#</li>
+              <li>ASP.NET Core</li>
+              <li>Entity Framework Core</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>Tools &amp; DevOps</h3>
+            <ul class="skills-list">
+              <li>Docker</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Linux</li>
+              <li>VS Code</li>
+              <li>Eclipse</li>
+              <li>Maven</li>
+              <li>Postman</li>
+              <li>Swagger</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- ============ WORKS / PROJECTS SECTION ============ -->
+      <section class="works" id="works">
+        <h2 class="section-title">Works</h2>
+
+        <div class="projects-grid">
+          <article class="project-card" id="project-qmail">
+            <picture class="project-img">
+              <source srcset="assets/project-a.webp" type="image/webp" />
+              <img src="assets/project-a.webp" alt="Q-Mail quantum-secure email platform screenshot" width="640" height="400" loading="lazy" />
+            </picture>
+
+            <div class="project-body">
+              <h3 class="project-title">Q-Mail &mdash; Quantum-Secure Email Platform</h3>
+              <p class="project-tech">Java &middot; Spring Boot &middot; Next.js &middot; PostgreSQL &middot; Rust &middot; Ring-LWE &middot; Docker &middot; InstantDB</p>
+              <ul class="project-highlights">
+                <li>
+                  Developed a secure email platform using Java Spring Boot and Next.js with REST
+                  APIs for authentication, mailbox management, and email CRUD operations.
+                </li>
+                <li>
+                  Integrated a Rust-based Ring-LWE microservice for post-quantum encryption,
+                  decryption, and key generation, achieving 128-bit quantum security.
+                </li>
+                <li>
+                  Designed a three-layer security architecture: Ring-LWE public-key encryption,
+                  identity-based access control, and AES-256-GCM private key management.
+                </li>
+                <li>
+                  Containerized services using Docker and implemented real-time cross-device sync
+                  using InstantDB.
+                </li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/thywisdom" target="_blank" rel="noopener">View on GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" id="project-ridesphere">
+            <picture class="project-img">
+              <source srcset="assets/project-b.webp" type="image/webp" />
+              <img src="assets/project-b.webp" alt="RideSphere car rental management system screenshot" width="640" height="400" loading="lazy" />
+            </picture>
+
+            <div class="project-body">
+              <h3 class="project-title">RideSphere &mdash; Car Rental Management System</h3>
+              <p class="project-tech">Java &middot; Spring Boot &middot; Spring Data JPA &middot; PostgreSQL &middot; React.js &middot; Bootstrap &middot; JWT</p>
+              <ul class="project-highlights">
+                <li>
+                  Built a full-stack car rental platform with Admin, Agent, and Customer roles using
+                  Java Spring Boot REST APIs.
+                </li>
+                <li>
+                  Implemented JWT-based stateless authentication and role-based authorization for
+                  secure multi-role access control.
+                </li>
+                <li>
+                  Integrated PostgreSQL via Spring Data JPA and Hibernate for persistent relational
+                  data management.
+                </li>
+                <li>
+                  Developed responsive UI using React.js and Bootstrap for booking, vehicle, and user
+                  workflows.
+                </li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/thywisdom" target="_blank" rel="noopener">View on GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- ============ TIMELINE SECTION ============ -->
+      <section class="timeline" id="timeline">
+        <h2 class="section-title">Timeline</h2>
+
+        <div class="timeline-columns">
+          <div class="timeline-column" id="experience">
+            <h3 class="timeline-subtitle">Experience</h3>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <article class="timeline-content">
+                  <h4>
+                    Freelancer &amp; <span class="timeline-highlight">Learner</span>
+                  </h4>
+                  <span class="timeline-institute">Self-employed</span>
+                  <p>
+                    Building backend systems with Java Spring Boot, working on personal projects,
+                    and continuing to learn modern web and cybersecurity technologies.
+                  </p>
+                  <span class="timeline-duration">Current</span>
+                </article>
+              </li>
+
+              <li class="timeline-item">
+                <article class="timeline-content">
+                  <h4>
+                    Network &amp; IT Support <span class="timeline-highlight">Intern</span>
+                  </h4>
+                  <span class="timeline-institute">Integra Software Services Pvt. Ltd.</span>
+                  <p>
+                    Worked on networking support, system troubleshooting, automation tasks, and web
+                    development-related activities. Gained practical exposure to enterprise
+                    workflows, technical support processes, and collaborative development
+                    environments.
+                  </p>
+                  <span class="timeline-duration">Jan 2025 &ndash; Feb 2025</span>
+                </article>
+              </li>
+            </ol>
+          </div>
+
+          <div class="timeline-column" id="education">
+            <h3 class="timeline-subtitle">Education</h3>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <article class="timeline-content">
+                  <h4>
+                    Computer Science and Business Systems
+                    <span class="timeline-highlight">B.Tech</span>
+                  </h4>
+                  <span class="timeline-institute">
+                    Sri Manakula Vinayagar Engineering College<br />
+                    (Pondicherry University)
+                  </span>
+                  <p class="timeline-mentions">CGPA: 9.0 / 10 &middot; Year of Passing: 2026</p>
+                  <span class="timeline-duration">Oct 2022 &ndash; Apr 2026</span>
+                </article>
+              </li>
+
+              <li class="timeline-item">
+                <article class="timeline-content">
+                  <h4>
+                    Higher Secondary Certificate
+                    <span class="timeline-highlight">HSC</span>
+                  </h4>
+                  <span class="timeline-institute">
+                    Amalorpavam Higher Secondary School<br />
+                    (Tamil Nadu State Board)
+                  </span>
+                  <p class="timeline-mentions">Marks: 528 / 600 (88%) &middot; Year of Passing: 2022</p>
+                  <span class="timeline-duration">Jun 2020 &ndash; May 2022</span>
+                </article>
+              </li>
+
+              <li class="timeline-item">
+                <article class="timeline-content">
+                  <h4>
+                    Secondary School Leaving Certificate
+                    <span class="timeline-highlight">SSLC</span>
+                  </h4>
+                  <span class="timeline-institute">
+                    Amalorpavam Higher Secondary School<br />
+                    (Tamil Nadu State Board)
+                  </span>
+                  <p class="timeline-mentions">Marks: 439 / 500 (87.8%) &middot; Year of Passing: 2020</p>
+                  <span class="timeline-duration">Jun 2019 &ndash; Mar 2020</span>
+                </article>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============ FOOTER (also serves as the Contact anchor) ============ -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-top">
+        <div class="footer-cta">
+          <h3 class="section-title">Let's Build Something Together</h3>
+          <address>
+            <a href="mailto:sumanezhumalai@gmail.com">sumanezhumalai@gmail.com</a>
+          </address>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="resume.html">Resume</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-socials" aria-label="Social media links">
+          <a href="https://linkedin.com/in/sumanezhumalai" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+              <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" fill="currentColor" />
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/thywisdom" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+              <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.11.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.95.1-.75.4-1.25.73-1.53-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.07.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A10.51 10.51 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z" fill="currentColor" />
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Suman Ezhumalai. Built from scratch.</p>
+      </div>
+    </footer>
+  </body>
+</html>
