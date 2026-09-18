@@ -1,0 +1,105 @@
+
+/* Section values / Skills
+----------------------------------------------------------------------------- */
+
+.section.values > .content {
+  padding: clamp(60px, 10vh, 140px) 0;
+}
+
+
+/* Skills grid — wrapper
+----------------------------------------------------------------------------- */
+
+.skills-grid {
+  position: relative;
+
+  /* Grid layout: 9 equal columns by default (desktop) */
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+
+  /* Outer border forms the top and left edges of the grid-line matrix */
+  border-top:  1px solid var(--color--foreground--10);
+  border-left: 1px solid var(--color--foreground--10);
+
+  /* Edge fade: intersect two linear gradients (horizontal × vertical)
+     so all four outer edges dissolve into the page background.
+     Only the decorative layer (border lines) is visually affected near
+     the edges; icons retain recognisability because the fade is subtle. */
+  -webkit-mask-image:
+    linear-gradient(to right,  transparent 0%, black 10%, black 90%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to right,  transparent 0%, black 10%, black 90%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+  mask-composite: intersect;
+}
+
+
+/* Skills grid — individual cells
+----------------------------------------------------------------------------- */
+
+.skill-cell {
+  /* Each cell must be square; the grid column width is the sizing authority */
+  aspect-ratio: 1 / 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Right and bottom borders complete the grid-line matrix
+     without doubling up on the wrapper's top/left borders */
+  border-right:  1px solid var(--color--foreground--10);
+  border-bottom: 1px solid var(--color--foreground--10);
+
+  /* Subtle background lift on hover — stays within theme */
+  transition: background-color 0.18s ease;
+  cursor: default;
+}
+
+.skill-cell:hover {
+  background-color: var(--color--foreground--5);
+}
+
+
+/* Skills grid — icon image
+----------------------------------------------------------------------------- */
+
+.skill-cell img {
+  /* Icon is contained within a fixed proportion of the cell.
+     The cell — not the SVG's intrinsic dimensions — controls the size. */
+  width:  48%;
+  height: 48%;
+  object-fit: contain;
+
+  /* Monochrome treatment: grayscale strips brand colors;
+     opacity at 0.35 keeps icons subdued in the normal state,
+     visually secondary to the page's main typography */
+  filter: grayscale(1);
+  opacity: 0.35;
+
+  /* Short, understated transition */
+  transition: opacity 0.18s ease;
+
+  /* Prevent the browser from using the image as a drag target */
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.skill-cell:hover img {
+  /* On hover: icon becomes much more visible, pulling toward
+     the full foreground tone while still being filter-grayscale */
+  opacity: 0.85;
+}
+
+
+/* Reduced-motion: respect user preference
+----------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-cell,
+  .skill-cell img {
+    transition: none;
+  }
+}
