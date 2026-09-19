@@ -1,5 +1,16 @@
 /* Style
 ----------------------------------------------------------------------------- */
+/* Scrollbar — hide visually, preserve all scrolling functionality (section 24)
+----------------------------------------------------------------------------- */
+
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
 
 
 /* Section cover

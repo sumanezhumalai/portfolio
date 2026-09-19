@@ -1,0 +1,224 @@
+
+/* Section work
+   Isolated stylesheet — reuses only existing CSS custom properties.
+   Do not add general-purpose utilities here.
+----------------------------------------------------------------------------- */
+
+
+/* Section padding — mirrors .section.values pattern
+----------------------------------------------------------------------------- */
+
+.section.work > .content {
+  padding: clamp(60px, 10vh, 140px) 0;
+}
+
+
+/* Works list — wrapper nav
+----------------------------------------------------------------------------- */
+
+.works-list {
+  width: 100%;
+  display: block;
+}
+
+
+/* Works item — each row is a full-width semantic link
+----------------------------------------------------------------------------- */
+
+.works-item {
+  display: grid;
+  /* Zone A (name) : Zone B (desc) : Zone C (arrow) */
+  grid-template-columns: 2fr 3fr auto;
+  align-items: center;
+  gap: 0 var(--grid--app-gutter);
+
+  /* Vertical rhythm — fixed min-height keeps all four rows equal */
+  min-height: 80px;
+  padding: 20px 0;
+
+  /* Reset anchor defaults */
+  text-decoration: none;
+  color: inherit;
+
+  /* Hover background fills the full row width */
+  margin: 0 calc(-1 * var(--grid--app-gutter));
+  padding-left: var(--grid--app-gutter);
+  padding-right: var(--grid--app-gutter);
+
+  background-color: var(--color--foreground--0);
+  transition: background-color 0.18s ease;
+
+  /* Prevent text-decoration bleed from .app-main a rule */
+  border-bottom: none !important;
+}
+
+/* Separator: only between items — no outer borders */
+.works-item + .works-item {
+  border-top: 1px solid var(--color--foreground--10);
+}
+
+
+/* Zone A — Project name
+----------------------------------------------------------------------------- */
+
+.works-item__name {
+  font-family: var(--font--family);
+  font-size: var(--font--size-medium);
+  font-weight: var(--font--weight);
+  font-feature-settings: var(--font--feature-settings);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-left: var(--font--margin-left);
+  color: var(--color--foreground--100);
+
+  transition: color 0.18s ease;
+}
+
+
+/* Zone B — Short description
+----------------------------------------------------------------------------- */
+
+.works-item__desc {
+  font-family: var(--font--family);
+  font-size: var(--font--size-regular);
+  font-weight: var(--font--weight);
+  line-height: var(--font--size-regular-line-height);
+  color: var(--color--foreground--33);
+
+  transition: color 0.18s ease;
+}
+
+
+/* Zone C — Arrow indicator
+----------------------------------------------------------------------------- */
+
+.works-item__arrow {
+  font-size: var(--font--size-regular);
+  color: var(--color--foreground--25);
+  justify-self: end;
+  display: inline-block;
+  transition: color 0.18s ease, transform 0.18s ease;
+}
+
+
+/* Hover state — restrained tonal lift
+----------------------------------------------------------------------------- */
+
+.works-item:hover {
+  background-color: var(--color--foreground--5);
+}
+
+.works-item:hover .works-item__name {
+  color: var(--color--foreground--100);
+}
+
+.works-item:hover .works-item__desc {
+  color: var(--color--foreground--50);
+}
+
+.works-item:hover .works-item__arrow {
+  color: var(--color--foreground--100);
+  transform: translateX(4px);
+}
+
+
+/* Focus state — keyboard accessible, consistent with site visual language
+----------------------------------------------------------------------------- */
+
+.works-item:focus {
+  outline: none;
+}
+
+.works-item:focus-visible {
+  outline: 1px solid var(--color--foreground--25);
+  outline-offset: -1px;
+}
+
+
+
+
+/* Reduced motion — respect user preference (section 29)
+----------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .works-item,
+  .works-item__name,
+  .works-item__desc,
+  .works-item__arrow {
+    transition: none;
+  }
+}
+
+
+/* Responsive — medium desktop / tablet <=1280px
+----------------------------------------------------------------------------- */
+
+@media all and (max-width: 1280px) {
+  .works-item__name {
+    font-size: clamp(18px, 1.6vw, 26px);
+  }
+}
+
+
+/* Responsive — tablet <=1020px (6-column grid)
+----------------------------------------------------------------------------- */
+
+@media all and (max-width: 1020px) {
+  .works-item {
+    grid-template-columns: 5fr 6fr auto;
+    min-height: 72px;
+    padding: 18px 0;
+    padding-left: var(--grid--app-gutter);
+    padding-right: var(--grid--app-gutter);
+  }
+
+  .works-item__name {
+    font-size: var(--font--size-medium);
+  }
+}
+
+
+/* Responsive — mobile <=760px (3-column grid)
+   Two-row stacking: name full-width, then desc + arrow on same row.
+----------------------------------------------------------------------------- */
+
+@media all and (max-width: 760px) {
+  .works-item {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "name   name"
+      "desc   arrow";
+    min-height: auto;
+    padding: 20px 0;
+    padding-left: var(--grid--app-gutter);
+    padding-right: var(--grid--app-gutter);
+    gap: 6px var(--grid--app-gutter);
+  }
+
+  .works-item__name {
+    grid-area: name;
+  }
+
+  .works-item__desc {
+    grid-area: desc;
+  }
+
+  .works-item__arrow {
+    grid-area: arrow;
+    align-self: end;
+  }
+}
+
+
+/* Responsive — small mobile <=500px (2-column grid)
+----------------------------------------------------------------------------- */
+
+@media all and (max-width: 500px) {
+  .works-item {
+    padding: 18px 0;
+    padding-left: var(--grid--app-gutter);
+    padding-right: var(--grid--app-gutter);
+    gap: 4px var(--grid--app-gutter);
+  }
+}
