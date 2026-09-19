@@ -160,6 +160,22 @@
     margin-top: -24px;
     margin-left: -7px;
   }
+  /* History timeline: override the global .look repositioning for the node context */
+  .section.background .look {
+    margin-top: 0;
+    margin-left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* Reduce year column and gaps at tablet */
+  .history-entry {
+    grid-template-columns: 25% 40px 1fr;
+    margin-bottom: clamp(44px, 7vh, 80px);
+  }
+  .history-timeline::before {
+    left: calc(25% + 20px);
+  }
   .app-aside {
     left: var(--grid--app-margin);
     bottom: var(--grid--app-margin);
@@ -182,6 +198,20 @@
      REMOVED (template cleanup). Re-add here when content is ready. */
   .skills-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+  /* History timeline 3-col */
+  .history-entry {
+    grid-template-columns: 22% 36px 1fr;
+    margin-bottom: clamp(36px, 6vh, 64px);
+  }
+  .history-timeline::before {
+    left: calc(22% + 18px);
+  }
+  .history-year {
+    padding-right: 14px;
+  }
+  .history-info {
+    padding-left: 14px;
   }
   .section.contact > .content {
     grid-template-columns: var(--grid--app-columns-1);
@@ -220,6 +250,20 @@
      REMOVED (template cleanup). Re-add here when content is ready. */
   .skills-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  /* History timeline 2-col / narrow mobile */
+  .history-entry {
+    grid-template-columns: 20% 32px 1fr;
+    margin-bottom: clamp(28px, 5vh, 48px);
+  }
+  .history-timeline::before {
+    left: calc(20% + 16px);
+  }
+  .history-year {
+    padding-right: 10px;
+  }
+  .history-info {
+    padding-left: 10px;
   }
   .section.contact .text .content {
     max-width: none;

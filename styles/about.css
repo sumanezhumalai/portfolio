@@ -1002,9 +1002,170 @@ body.theme-slider--is--visible .app-aside .option.theme .dot:nth-child(1) {
   ----------------------------------------------------------------------------- */
 
 
-/* Section background — REMOVED (template cleanup).
-     Add new .section.background styles here when content is ready.
+/* Section background — History Timeline
   ----------------------------------------------------------------------------- */
+
+.section.background > .content {
+  padding: clamp(80px, 14vh, 160px) 0;
+}
+
+/* Resets for the ordered list */
+.history-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  /* Spine extends slightly past first and last node */
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+
+/* Continuous vertical spine — single ::before on the ol */
+.history-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  /* x-position: right edge of the year column + half of the spine-zone width.
+     Year col = 28% of parent. Spine-zone = 48px. Center of spine-zone = 24px from left edge of spine-zone.
+     So spine center sits at calc(28% + 24px). We draw a 1px line, offset half left. */
+  left: calc(28% + 24px);
+  width: 1px;
+  background-color: var(--color--foreground--15);
+  pointer-events: none;
+}
+
+/* Each timeline row — three-zone CSS Grid */
+.history-entry {
+  display: grid;
+  grid-template-columns: 28% 48px 1fr;
+  grid-template-areas: "year node info";
+  /* Content-driven height; no fixed row size */
+  align-items: center;
+  /* Generous gap between entries */
+  margin-bottom: clamp(56px, 9vh, 110px);
+}
+
+.history-entry:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Year column ── */
+.history-year {
+  grid-area: year;
+  font-size: var(--font--size-huge);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: right;
+  /* Gap between year right-edge and spine */
+  padding-right: 20px;
+  color: var(--color--foreground--100);
+  /* Optical alignment: keep the year on the same baseline system */
+  margin-left: var(--font--margin-left);
+  /* Prevent year from getting bold — weight is already set globally */
+}
+
+/* ── Spine / node column ── */
+.history-node {
+  grid-area: node;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  /* Ensures .look inside can use position:absolute against this cell */
+}
+
+/* Normal node dot — small solid circle */
+.history-node::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color--foreground--100);
+  /* Z-index keeps dot visually on top of the spine line */
+  z-index: 1;
+}
+
+/* Current entry (2026) — hide the ::before dot, use .look assembly instead */
+.history-entry--current .history-node::before {
+  display: none;
+}
+
+/* Re-position .look for the timeline node context.
+   The global .look uses absolute margins tuned for the contact section.
+   Here we reset and re-center it within the 48px spine-zone cell. */
+.section.background .look {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  /* Center within the node cell */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Clear the contact-section offset margins */
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* ── Info column ── */
+.history-info {
+  grid-area: info;
+  /* Gap between spine and info text */
+  padding-left: 20px;
+}
+
+.history-info p {
+  margin: 0;
+  padding: 0;
+}
+
+.history-title {
+  font-size: var(--font--size-large);
+  line-height: 1.16;
+  letter-spacing: -0.01em;
+  color: var(--color--foreground--100);
+  margin-left: var(--font--margin-left);
+  margin-bottom: 0.25em;
+}
+
+.history-institute {
+  font-size: var(--font--size-regular);
+  line-height: var(--font--size-regular-line-height);
+  color: var(--color--foreground--50);
+  margin-bottom: 0.35em;
+}
+
+.history-detail {
+  font-size: var(--font--size-regular);
+  line-height: var(--font--size-regular-line-height);
+  color: var(--color--foreground--50);
+  margin-bottom: 0.35em;
+}
+
+.history-duration {
+  font-size: var(--font--size-regular);
+  line-height: var(--font--size-regular-line-height);
+  color: var(--color--foreground--33);
+}
+
+.history-duration time {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Reduced motion: disable pulse, keep solid dot */
+@media (prefers-reduced-motion: reduce) {
+  .section.background .look .radius {
+    animation: none;
+    background-color: var(--color--foreground--0);
+  }
+}
+
+
 
 
 /* Section references — REMOVED (template cleanup).
